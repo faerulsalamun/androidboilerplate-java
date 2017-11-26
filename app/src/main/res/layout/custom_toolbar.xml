@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    >
+
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+      <ImageButton
+          android:id="@+id/image_button_left"
+          android:layout_width="56dp"
+          android:layout_height="match_parent"
+          android:background="?selectableItemBackground"
+          android:src="@mipmap/ic_close"
+          tools:ignore="ContentDescription"
+          />
+
+      <TextView
+          android:id="@+id/text_title_left"
+          android:layout_width="wrap_content"
+          android:layout_height="?android:attr/actionBarSize"
+          android:layout_centerInParent="true"
+          android:layout_marginLeft="@dimen/dimen_16dp"
+          android:layout_toRightOf="@+id/image_button_left"
+          android:gravity="center"
+          android:textColor="@android:color/white"
+          android:textStyle="bold"
+          />
+
+      <TextView
+          android:id="@+id/text_title"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:textAllCaps="true"
+          android:textColor="@android:color/white"
+          android:textStyle="bold"
+          />
+
+      <TextView
+          android:id="@+id/text_right"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentEnd="true"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:paddingRight="@dimen/dimen_20dp"
+          android:textAllCaps="true"
+          android:textColor="@android:color/white"
+          android:textSize="@dimen/text_10sp"
+          android:textStyle="bold"
+          />
+
+      <ImageButton
+          android:id="@+id/image_button_right_two"
+          android:layout_width="56dp"
+          android:layout_height="match_parent"
+          android:layout_toLeftOf="@+id/image_button_right"
+          android:background="?selectableItemBackground"
+          android:visibility="gone"
+          />
+
+
+      <ImageButton
+          android:id="@+id/image_button_right"
+          android:layout_width="56dp"
+          android:layout_height="match_parent"
+          android:layout_alignParentEnd="true"
+          android:layout_alignParentRight="true"
+          android:background="?selectableItemBackground"
+          android:visibility="gone"
+          />
+    </RelativeLayout>
+  </FrameLayout>
+
+
+</android.support.v7.widget.Toolbar>
